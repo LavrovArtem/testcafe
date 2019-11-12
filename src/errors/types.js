@@ -68,7 +68,11 @@ export const TEST_RUN_ERRORS = {
     uncaughtErrorInCustomClientScriptCode:                 'E64',
     uncaughtErrorInCustomClientScriptCodeLoadedFromModule: 'E65',
     uncaughtErrorInCustomScript:                           'E66',
-    uncaughtTestCafeErrorInCustomScript:                   'E67'
+    uncaughtTestCafeErrorInCustomScript:                   'E67',
+    childWindowIsNotLoadedError:                           'E68',
+    childWindowNotFoundError:                              'E69',
+    cannotSwitchToWindowError:                             'E70',
+    closeChildWindowError:                                 'E71'
 };
 
 export const RUNTIME_ERRORS = {
@@ -119,5 +123,7 @@ export const RUNTIME_ERRORS = {
     clientScriptBasePathIsNotSpecified:                 'E1045',
     clientScriptInitializerMultipleContentSources:      'E1046',
     cannotLoadClientScriptFromPath:                     'E1047',
-    clientScriptModuleEntryPointPathCalculationError:   'E1048'
+    clientScriptModuleEntryPointPathCalculationError:   'E1048',
+    cannotUseAllowMultipleWindowsOptionForLegacyTests:  'E1049',
+    cannotUseAllowMultipleWindowsOptionForSomeBrowsers: 'E1050'
 };
