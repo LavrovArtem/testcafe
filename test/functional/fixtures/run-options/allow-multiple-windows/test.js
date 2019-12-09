@@ -17,6 +17,10 @@ describe('Allow multiple windows', () => {
         it('Nested pages', () => {
             return runTests('testcafe-fixtures/switching-to-child/nested-pages.js', null, { allowMultipleWindows: true });
         });
+
+        it.only('Cross-domain page', () => { // eslint-disable-line
+            return runTests('testcafe-fixtures/switching-to-child/cross-domain-page.js', null, { allowMultipleWindows: true });
+        });
     });
 
     // TODO: Work in progress
